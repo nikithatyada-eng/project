@@ -1,0 +1,124 @@
+
+body{
+background:#020810;
+color:#c8e6fa;
+font-family:monospace;
+margin:0;
+}
+
+/* cyber grid */
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+
+background-image:
+linear-gradient(rgba(0,229,255,0.05) 1px,transparent 1px),
+linear-gradient(90deg,rgba(0,229,255,0.05) 1px,transparent 1px);
+
+background-size:40px 40px;
+pointer-events:none;
+}
+
+/* wrapper */
+
+.app{
+min-height:100vh;
+}
+.dashboard{
+padding:40px;
+}
+
+h1{
+color:#00e5ff;
+text-shadow:0 0 10px #00e5ff;
+}
+
+.metrics{
+display:flex;
+gap:20px;
+margin-bottom:30px;
+}
+
+.card{
+background:#061020;
+border:1px solid #0d3060;
+padding:20px;
+width:200px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,229,255,0.2);
+}
+
+.profiles button{
+background:#00e5ff;
+border:none;
+padding:12px 20px;
+margin:10px;
+cursor:pointer;
+font-weight:bold;
+color:black;
+border-radius:6px;
+box-shadow:0 0 10px #00e5ff;
+}
+
+.profiles button:hover{
+box-shadow:0 0 25px #00e5ff;
+}
+
+/* CAPTCHA */
+
+.captchaBox{
+background:#061020;
+border:2px solid yellow;
+padding:30px;
+margin-top:30px;
+width:350px;
+border-radius:10px;
+box-shadow:0 0 15px rgba(255,255,0,0.3);
+}
+
+.captchaDisplay{
+font-size:30px;
+letter-spacing:6px;
+background:black;
+color:yellow;
+padding:10px;
+margin-bottom:15px;
+text-align:center;
+}
+
+/* OTP */
+
+.otpBox{
+background:#061020;
+border:2px solid red;
+padding:30px;
+margin-top:30px;
+width:350px;
+border-radius:10px;
+box-shadow:0 0 15px rgba(255,0,0,0.3);
+}
+
+.otpBox input{
+padding:10px;
+margin-right:10px;
+}
+
+.chartBox{
+width:400px;
+margin-top:20px;
+}
+
+.logs{
+margin-top:20px;
+}
+
+.log{
+background:black;
+color:#00ff9c;
+padding:10px;
+margin:10px 0;
+font-size:14px;
+border-left:3px solid #00e5ff;
+}
